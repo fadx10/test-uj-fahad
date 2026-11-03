@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <g fill="none" stroke="#0e3164" stroke-width="1" stroke-opacity="0.10">
+    <path d="M70 10 84 42 116 56 84 70 70 102 56 70 24 56 56 42Z"/>
+    <path d="M70 28 79 49 100 58 79 67 70 88 61 67 40 58 61 49Z"/>
+    <circle cx="70" cy="56" r="5"/>
+    <path d="M0 126h140M126 0v140" stroke-opacity="0.05"/>
+  </g>
+</svg>

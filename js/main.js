@@ -138,4 +138,28 @@
       newsletter.reset();
     });
   }
+
+  /* Contact and volunteer forms (prototype only) */
+  document.querySelectorAll("[data-contact]").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const note = form.querySelector("[data-form-note]");
+      if (note) {
+        note.textContent = "JazakAllah khair — your message has been received. The team will be in touch.";
+        note.classList.add("is-success");
+      }
+      form.reset();
+    });
+  });
+
+  /* Donation amount selector (prototype only) */
+  document.querySelectorAll("[data-amounts]").forEach((group) => {
+    const buttons = Array.from(group.querySelectorAll(".amount"));
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((item) => item.classList.remove("is-selected"));
+        button.classList.add("is-selected");
+      });
+    });
+  });
 })();

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tafseer Classes | Utrujj</title>
+  <meta name="description" content="Tafseer Classes with Shaykh Haytham Tamim — authentic, practical and taught live by Utrujj.">
+  <link rel="icon" href="assets/img/cropped-IMG_2768-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="learn">
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 21v-7h2.4l.4-3h-2.8V9.2c0-.9.3-1.5 1.6-1.5h1.3V5.1c-.6-.1-1.5-.2-2.5-.2-2.5 0-4.1 1.5-4.1 4.2V11H8v3h2.8v7z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.5 5 2.5-5 2.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H19v17H7.5A2.5 2.5 0 0 0 5 21.5z"/><path d="M5 19.5A2.5 2.5 0 0 1 7.5 17H19"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 0 1 5.1.7c0 1.8-2.6 2.1-2.6 3.8"/><circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 2.4 6.3L21 10l-5 4.1 1.7 6.4-5.7-3.7L6.3 20.5 8 14.1 3 10l6.6-1.7z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5S3.5 15 3.5 9.1A4.6 4.6 0 0 1 12 6.4a4.6 4.6 0 0 1 8.5 2.7c0 5.9-8.5 11.4-8.5 11.4Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3.2 2.5-5.5 5.5-5.5s5.5 2.3 5.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6 0 4.5 2 4.5 4.4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.4 3.8 5.5 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.5-3.8-9S9.5 5.4 12 3Z"/></symbol>
+  </svg>
+
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Utrujj home">
+        <img src="assets/img/Utrujj-Logo-Web-AK-1.webp" alt="Utrujj — Knowledge &amp; Creativity" width="1007" height="383">
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li class="nav-item has-sub" data-nav="about">
+            <button class="nav-link" type="button" aria-expanded="false">About <svg class="icon icon--sm"><use href="#i-chevron"/></svg></button>
+            <ul class="submenu">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="shaykh-haytham-tamim.html">Our Founder</a></li>
+              <li><a href="our-team.html">The Team</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub is-active" data-nav="learn" aria-current="page">
+            <button class="nav-link" type="button" aria-expanded="false">Learn <svg class="icon icon--sm"><use href="#i-chevron"/></svg></button>
+            <ul class="submenu">
+              <li><a href="tafseer-classes.html">Tafseer Classes</a></li>
+              <li><a href="hadith-classes.html">Hadith Classes</a></li>
+              <li><a href="on-demand.html">On Demand</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub" data-nav="read">
+            <button class="nav-link" type="button" aria-expanded="false">Read <svg class="icon icon--sm"><use href="#i-chevron"/></svg></button>
+            <ul class="submenu">
+              <li><a href="blog.html">Latest Articles</a></li>
+              <li><a href="qa.html">Q &amp; A</a></li>
+              <li><a href="booklets.html">Booklets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub" data-nav="attend">
+            <button class="nav-link" type="button" aria-expanded="false">Attend <svg class="icon icon--sm"><use href="#i-chevron"/></svg></button>
+            <ul class="submenu">
+              <li><a href="events.html">Events</a></li>
+              <li><a href="retreats.html">Retreats</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub" data-nav="watch">
+            <button class="nav-link" type="button" aria-expanded="false">Watch <svg class="icon icon--sm"><use href="#i-chevron"/></svg></button>
+            <ul class="submenu">
+              <li><a href="on-demand.html">On Demand</a></li>
+              <li><a href="https://www.youtube.com/c/ShaykhHaythamTamim" target="_blank" rel="noopener">YouTube Courses</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Open search" data-search-open>
+          <svg class="icon"><use href="#i-search"/></svg>
+        </button>
+        <a class="btn btn--primary btn--small header-donate" href="donate.html" data-nav="donate">Donate</a>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+      <nav aria-label="Mobile navigation">
+        <div class="mobile-menu-group">
+          <p class="mobile-menu-label">About</p>
+          <a href="about.html">About Us</a>
+          <a href="shaykh-haytham-tamim.html">Our Founder</a>
+          <a href="our-team.html">The Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="mobile-menu-group">
+          <p class="mobile-menu-label">Learn</p>
+          <a href="tafseer-classes.html">Tafseer Classes</a>
+          <a href="hadith-classes.html">Hadith Classes</a>
+          <a href="on-demand.html">On Demand</a>
+        </div>
+        <div class="mobile-menu-group">
+          <p class="mobile-menu-label">Read</p>
+          <a href="blog.html">Latest Articles</a>
+          <a href="qa.html">Q &amp; A</a>
+          <a href="booklets.html">Booklets</a>
+        </div>
+        <div class="mobile-menu-group">
+          <p class="mobile-menu-label">Attend</p>
+          <a href="events.html">Events</a>
+          <a href="retreats.html">Retreats</a>
+          <a href="https://www.youtube.com/c/ShaykhHaythamTamim" target="_blank" rel="noopener">YouTube Courses</a>
+        </div>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a class="btn btn--primary" href="donate.html">Donate</a>
+        <a class="link-arrow" href="mailto:info@utrujj.org">info@utrujj.org <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel-inner">
+      <button class="icon-btn search-close" type="button" aria-label="Close search" data-search-close>
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+      <p class="eyebrow">Search Utrujj</p>
+      <form action="https://www.utrujj.org/" method="get" role="search">
+        <label class="sr-only" for="site-search">Search the site</label>
+        <input id="site-search" name="s" type="search" placeholder="What would you like to learn about?" autocomplete="off">
+        <button class="btn btn--primary" type="submit">Search <svg class="icon icon--sm"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="on-demand.html">Learn</a><span aria-hidden="true">/</span><span>Tafseer Classes</span></nav>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Learn with us</p>
+          <h1>Study the Quran with <em>clarity and purpose.</em></h1>
+          <p class="page-hero__lead">You need someone with deep knowledge to unlock its meanings, explain the background of revelations, and show how its rulings fit together as a complete way of life.</p>
+          <div class="price-block"><strong>£50</strong><span>/ month</span></div>
+          <div class="detail-chips"><span class="detail-chip">58 lessons</span><span class="detail-chip">1.5 hours, twice weekly</span><span class="detail-chip">Online & in person</span><span class="detail-chip">Recordings available</span></div>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="https://www.utrujj.org/tafseer-classes/">Enrol now <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+            <a class="link-arrow" href="contact.html">Ask a question <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="hero-figure hero-figure--portrait">
+          <div class="hero-figure__media">
+            <img src="assets/img/Shaykh-Haytham-Tamim-Tafseer-1.webp" alt="Shaykh Haytham Tamim reading from an open book" width="800" height="1000">
+          </div>
+          <figcaption class="hero-figure__caption">Shaykh Haytham Tamim<span>Your teacher</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container split split--top">
+        <div class="split__copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>The class</p>
+          <h2>Why study <em>tafseer?</em></h2>
+          <p>The Quran is your divine guide to a successful life — but how much are you benefiting from it? Reciting it beautifully is one thing, but understanding its deeper meanings is another. Translations may help, yet without context, the coherence can be lost.</p><p>The Quran isn’t a simple narrative. It requires guidance. You need someone with deep knowledge to unlock its meanings, explain the background of revelations, and show how its rulings fit together as a complete way of life.</p><p>Studying Tafseer with a reputable and reliable source allows you to understand each verse clearly — how it connects to the life of the Prophet ﷺ, how it shaped mindsets, and how it transformed a society in need of guidance.</p>
+          <a class="btn btn--primary" href="https://www.utrujj.org/tafseer-classes/">Join the class <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="split__media">
+          <img src="assets/img/pages/quran-open.webp" alt="An open Quran with a hand resting on the page" width="1000" height="667" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--blue">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>What you will gain</p>
+            <h2>A deeper <em>understanding.</em></h2>
+          </div>
+          <div class="section-intro">
+            <p>These are the marks of a class that stays with you long after the lesson ends.</p>
+          </div>
+        </div>
+        <div class="check-grid">
+            <div class="check-item">
+              <svg class="icon"><use href="#i-check"/></svg>
+              <div><h3>See the bigger picture</h3><p>Learn how rulings fit together in a divine system, rather than as isolated verses.</p></div>
+            </div>
+            <div class="check-item">
+              <svg class="icon"><use href="#i-check"/></svg>
+              <div><h3>Understand the context</h3><p>Know the background of each revelation and the circumstances that shaped it.</p></div>
+            </div>
+            <div class="check-item">
+              <svg class="icon"><use href="#i-check"/></svg>
+              <div><h3>Gain psychological insight</h3><p>Develop deeper self-awareness and emotional resilience through the Quran.</p></div>
+            </div>
+            <div class="check-item">
+              <svg class="icon"><use href="#i-check"/></svg>
+              <div><h3>Strengthen your faith</h3><p>Find comfort, clarity and a stronger connection with Allah.</p></div>
+            </div></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="quote-panel">
+          <figure>
+            <blockquote><p>“This is a blessed Book which We have revealed to you, that they might reflect upon its verses and that those of understanding would be reminded.”</p></blockquote>
+            <figcaption>Quran (38:29)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper">
+      <div class="container split">
+        <figure class="split__media split__media--arch">
+          <img src="assets/img/Shaykh-Haytham-Tamim-Tafseer-1.webp" alt="Shaykh Haytham Tamim reading from an open book" width="800" height="1000" loading="lazy">
+        </figure>
+        <div class="split__copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Your teacher</p>
+          <h2>A scholar of <em>the Quran.</em></h2>
+          <p>Shaykh Haytham Tamim has dedicated his life to studying the Quran, drawing from major classical texts and the teachings of renowned scholars. His knowledge has not just been acquired from books, but from being in the company of respected scholars from whom the knowledge has been passed down over generations, from chest to chest, going back to Prophet Muhammad ﷺ.</p><p>As a community leader, he understands that sacred knowledge is meant to shape lives, not sit on shelves. His explanations break down verses to reveal their psychological, emotional, historical and legal implications.</p>
+          <a class="link-arrow" href="shaykh-haytham-tamim.html">About the Shaykh <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span>Questions</p>
+            <h2>Good to <em>know.</em></h2>
+          </div>
+          <div class="section-intro">
+            <p>Still unsure? Email <a href="mailto:info@utrujj.org">info@utrujj.org</a> and the team will help.</p>
+          </div>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How long is each class?</summary>
+            <p>Classes run for 1.5 hours, twice weekly. Recordings are available if you cannot attend live.</p>
+          </details>
+          <details>
+            <summary>Can I join online?</summary>
+            <p>Yes. The class is available online and in person, so you can learn from wherever you are.</p>
+          </details>
+          <details>
+            <summary>What if I miss a lesson?</summary>
+            <p>Recordings are provided so you can catch up at a time that suits you.</p>
+          </details>
+          <details>
+            <summary>Do I need to speak Arabic?</summary>
+            <p>No. The Shaykh teaches in clear English and explains the Arabic where it matters.</p>
+          </details>
+          <details>
+            <summary>How do I enrol?</summary>
+            <p>Use the enrol button on this page, or email info@utrujj.org and the team will guide you.</p>
+          </details></div>
+      </div>
+    </section>
+
+    
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Learn with Utrujj</p>
+          <h2>Start your <em>journey.</em></h2>
+          <p>Join a community of learners studying the Quran and Sunnah with clarity, depth and purpose.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="https://www.utrujj.org/tafseer-classes/">Enrol now <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+          <a class="link-arrow" href="on-demand.html">Explore On Demand <svg class="icon icon--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="Utrujj home">
+          <img src="assets/img/Utrujj-Logo-Web-AK-1.webp" alt="Utrujj — Knowledge &amp; Creativity" width="1007" height="383">
+        </a>
+        <p>Spreading the positive message of peace, love and justice for over two decades.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/UtrujjFoundation" target="_blank" rel="noopener" aria-label="Utrujj on Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+          <a href="https://www.instagram.com/utrujj/" target="_blank" rel="noopener" aria-label="Utrujj on Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.youtube.com/c/ShaykhHaythamTamim" target="_blank" rel="noopener" aria-label="Shaykh Haytham Tamim on YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+          <a href="mailto:info@utrujj.org" aria-label="Email Utrujj"><svg class="icon"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="About">
+        <h3>About</h3>
+        <a href="about.html">About Utrujj</a>
+        <a href="shaykh-haytham-tamim.html">Our Founder</a>
+        <a href="our-team.html">The Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="volunteer.html">Volunteer</a>
+      </nav>
+
+      <nav class="footer-nav" aria-label="Learn">
+        <h3>Learn</h3>
+        <a href="tafseer-classes.html">Tafseer Classes</a>
+        <a href="hadith-classes.html">Hadith Classes</a>
+        <a href="on-demand.html">On Demand</a>
+        <a href="events.html">Events</a>
+        <a href="retreats.html">Retreats</a>
+      </nav>
+
+      <nav class="footer-nav" aria-label="Read">
+        <h3>Read</h3>
+        <a href="blog.html">Latest Articles</a>
+        <a href="qa.html">Q &amp; A</a>
+        <a href="booklets.html">Booklets</a>
+        <a href="donate.html">Donate</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Utrujj Foundation · Registered charity 1196901</p>
+      <p><a href="mailto:info@utrujj.org">info@utrujj.org</a></p>
+      <p class="footer-credit">Site design: Fahad Khan</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
